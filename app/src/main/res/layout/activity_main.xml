@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="chuankou.cdd.com.projectofchuankou.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/main_scan_all"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="#b5b5b5"
+                android:gravity="center"
+                android:text="查看串口"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="串口名称"/>
+
+            <TextView
+                android:id="@+id/main_port_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#b5b5b5"
+                android:gravity="center"
+                android:hint="串口名称"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/main_port_connect"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="#b5b5b5"
+                android:gravity="center"
+                android:text="连接串口"
+                android:textSize="15sp"/>
+
+
+            <EditText
+                android:id="@+id/main_edit_mgs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="请输入需要发送的数据"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"/>
+
+            <TextView
+                android:id="@+id/main_send"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="#b5b5b5"
+                android:gravity="center"
+                android:text="发送数据"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/main_receive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#b5b5b5"
+                android:gravity="center"
+                android:hint="接收到的数据"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textSize="15sp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
